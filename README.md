@@ -1,6 +1,6 @@
 # NLPstats
 
-**Python Web Scraping**
+#Python Web Scraping
 
 **Overview**
 
@@ -35,4 +35,36 @@ A running instance of the Chrome browser
 
 ![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/4f457894-6103-487f-9d77-d31cdff460bf)
 
+#Spring Boot Text Analysis Application
 
+**Overview**
+
+This Spring Boot application provides functionality for analyzing text data. Users can upload text files, and the application will process these files to extract various statistics such as the number of sentences, words, nouns, verbs, and adjectives. The application also compares these statistics with aggregated data from a pre-existing CSV file.
+
+**Features**
+
+Text Analysis: Analyze uploaded text files to gather statistics.
+Data Comparison: Compare text statistics with aggregated data from a CSV file.
+Web Interface: Easy-to-use web interface for uploading text files and viewing results.
+
+**Prerequisites**
+Java JDK 8 or later
+Maven 3.6.0 or later
+
+**Usage**
+
+Navigate to http://localhost:8080 in your web browser.
+Upload a text file to get its statistical analysis.
+View the comparison of current text statistics against aggregated data.
+
+**Architecture**
+
+This project is built using the Spring Boot framework, with the following key components:
+
+Controller: Handles HTTP requests and interactions with the service layer.
+Service: Business logic for text analysis and CSV data processing.
+Model: Data models representing text statistics and aggregated statistics.
+View: Thymeleaf templates for rendering the UI.
+
+**Contact**
+Phanidhiraj Padimiti - phanidhirajp@arizona.edu
