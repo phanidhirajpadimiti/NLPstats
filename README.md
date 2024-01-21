@@ -48,7 +48,7 @@ Data Comparison: Compare text statistics with aggregated data from a CSV file.
 Web Interface: Easy-to-use web interface for uploading text files and viewing results.
 
 **Prerequisites**
-Java JDK 8 or later
+Java JDK 21 or later
 Maven 3.6.0 or later
 
 **Usage**
@@ -66,5 +66,21 @@ Service: Business logic for text analysis and CSV data processing.
 Model: Data models representing text statistics and aggregated statistics.
 View: Thymeleaf templates for rendering the UI.
 
+**Screenshots**
+
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/e94f0640-42c3-492c-93b6-880d0ffbee84)
+
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/f1c0cf58-716e-45dc-90a1-e8fcf9c212f6)
+
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/7f5b3a59-1b18-4f41-b65c-3686161052f2)
+
+
+
+
+
+
 **Contact**
+
 Phanidhiraj Padimiti - phanidhirajp@arizona.edu
+
+
