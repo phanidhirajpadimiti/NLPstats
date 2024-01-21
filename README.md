@@ -1,6 +1,6 @@
 # NLPstats
 
-#Python Web Scraping
+# Python Web Scraping
 
 **Overview**
 
@@ -35,7 +35,7 @@ A running instance of the Chrome browser
 
 ![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/4f457894-6103-487f-9d77-d31cdff460bf)
 
-#Spring Boot Text Analysis Application
+# Spring Boot Text Analysis Application
 
 **Overview**
 
