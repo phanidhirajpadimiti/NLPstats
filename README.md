@@ -35,6 +35,9 @@ A running instance of the Chrome browser
 
 ![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/4f457894-6103-487f-9d77-d31cdff460bf)
 
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/85b03ebf-94b8-4c69-be3d-50c8403b2634)
+
+
 # Spring Boot Text Analysis Application
 
 **Overview**
@@ -68,16 +71,13 @@ View: Thymeleaf templates for rendering the UI.
 
 **Screenshots**
 
-![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/e94f0640-42c3-492c-93b6-880d0ffbee84)
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/8d0fdb22-1c4e-47af-9f9a-12675407619a)
 
-![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/f1c0cf58-716e-45dc-90a1-e8fcf9c212f6)
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/8fd3775c-f3a3-4663-bad4-3132c19f36c5)
 
-![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/7f5b3a59-1b18-4f41-b65c-3686161052f2)
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/739d4fa6-3d97-452e-bc90-cb6f873e62f4)
 
-
-
-
-
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/68fd655e-c8cb-45dd-99fe-60c5be9b5e7d)
 
 **Contact**
 
