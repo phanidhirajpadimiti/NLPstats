@@ -33,5 +33,6 @@ A running instance of the Chrome browser
 
 ![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/2122612c-c350-45d3-8568-c405f2713735)
 
-![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/7b4053b2-a742-41ae-92b0-505568d8f5f9)
+![image](https://github.com/phanidhirajpadimiti/NLPstats/assets/142957336/4f457894-6103-487f-9d77-d31cdff460bf)
+
 
