@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics Comparison</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0/css/bootstrap.min.css}">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="/"><span class="navbar-brand mb-0 h1">Home</span></a>
+    </nav>
+    <div class="container mt-5">
+        <h2>Statistics Comparison</h2>
+        <!-- Ensure there is at least one element in aggregatedStats to avoid errors -->
+        <div th:if="${aggregatedStats.size() > 0}">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Statistic</th>
+                        <th>Current Text</th>
+                        <th>Aggregated Results</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Number of Sentences</td>
+                        <td th:text="${textStatistics.numSentences}"></td>
+                        <td th:text="${aggregatedStats[0].avg_num_sentences}"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Words</td>
+                        <td th:text="${textStatistics.numWords}"></td>
+                        <td th:text="${aggregatedStats[0].avg_num_words}"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Nouns</td>
+                        <td th:text="${textStatistics.numNouns}"></td>
+                        <td th:text="${aggregatedStats[0].avg_num_nouns}"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Verbs</td>
+                        <td th:text="${textStatistics.numVerbs}"></td>
+                        <td th:text="${aggregatedStats[0].avg_num_verbs}"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Adjectives</td>
+                        <td th:text="${textStatistics.numAdjectives}"></td>
+                        <td th:text="${aggregatedStats[0].avg_num_adjectives}"></td>
+                    </tr>
+                    <!-- Add more rows as needed for additional statistics -->
+                </tbody>
+            </table>
+        </div>
+        <div th:unless="${aggregatedStats.size() > 0}">
+            <p>No aggregated data available for comparison.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0/css/bootstrap.min.css}">
+    <title>Results Page</title>
+    <style>
+        .noun { color: blue; }
+        .verb { color: green; }
+        .adjective { color: red; }
+        .annotated-text {
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .legend-item {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .legend-color-box {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="/"><span class="navbar-brand mb-0 h1">Home</span></a>
+    </nav>
+
+    <div class="container mt-5">
+        
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card p-4">
+                    <h2 class="text-center mb-4">Analysis Results</h2>
+                    <p th:utext="${parsedText}"></p>
+                    <div class="annotated-text" th:utext="${annotatedText}"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color-box" style="background-color: blue;"></div>
+                <span>Nouns</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color-box" style="background-color: green;"></div>
+                <span>Verbs</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color-box" style="background-color: red;"></div>
+                <span>Adjectives</span>
+            </div>
+        </div>
+
+        <form action="/comparison" method="post">
+            <!-- Add a hidden field to include textStatistics -->
+            <input type="hidden" name="numSentences" th:value="${textStatistics.numSentences}" />
+            <input type="hidden" name="numWords" th:value="${textStatistics.numWords}" />
+            <input type="hidden" name="numNouns" th:value="${textStatistics.numNouns}" />
+            <input type="hidden" name="numVerbs" th:value="${textStatistics.numVerbs}" />
+            <input type="hidden" name="numAdjectives" th:value="${textStatistics.numAdjectives}" />
+        
+            <!-- Include other form fields and submit button -->
+            <!-- ... -->
+        
+            <button type="submit" class="btn btn-primary">Compare NLP Statistics</button>
+        </form>
+
+    </div>
+</body>
+</html>

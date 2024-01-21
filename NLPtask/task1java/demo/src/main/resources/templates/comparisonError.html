@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0/css/bootstrap.min.css}">
+    <style>
+        .error-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container error-container">
+        <h1>Error</h1>
+        <p>An error occurred while trying to compare the statistics.</p>
+        
+        <!-- Display error message if available -->
+        <p th:if="${errorMessage}" th:text="${errorMessage}"></p>
+        
+        <!-- Links to navigate to the home page or previous page -->
+        <div>
+            <a th:href="@{/}" class="btn btn-primary">Go to Home</a>
+            <button onclick="history.back()" class="btn btn-secondary">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>

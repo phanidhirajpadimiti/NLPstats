@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <!-- Add your stylesheets, scripts, or other head elements here -->
+</head>
+<body>
+    <div class="container">
+        <h1>Error Occurred</h1>
+        <p>An unexpected error occurred during processing. Please try again later.</p>
+        <p>Error details: <span th:text="${errorMessage}"></span></p>
+        <!-- You can customize this page further based on your needs -->
+    </div>
+</body>
+</html>
