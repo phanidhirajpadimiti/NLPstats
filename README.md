@@ -20,6 +20,10 @@ Selenium: A tool for automating web browsers, used here for scraping web content
 spaCy: An open-source software library for advanced NLP in Python.
 CSV Module: For writing the extracted data and NLP statistics into CSV files.
 
+**How to run**
+
+python cdc_text_metrics.py - to run the python file
+
 **Requirements**
 To run this script, you will need:
 
@@ -68,6 +72,12 @@ Controller: Handles HTTP requests and interactions with the service layer.
 Service: Business logic for text analysis and CSV data processing.
 Model: Data models representing text statistics and aggregated statistics.
 View: Thymeleaf templates for rendering the UI.
+
+**How to run**
+
+navigate to demo folder
+./mvnw clean install - to install the dependencies
+./mvnw spring-boot:run - to run the spring boot application
 
 **Screenshots**
 
